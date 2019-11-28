@@ -32,7 +32,9 @@ app.get('/',function(req,res){
 
 app.use('/user', userroute);
 app.use('/vendor',vendorroute);
-
+app.listen(3000,()=>{
+    console.log("3K!");
+})
 
 
 

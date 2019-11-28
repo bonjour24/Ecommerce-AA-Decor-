@@ -6,6 +6,14 @@
     <link rel="stylesheet" href="style-signup.css">
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
   </head>
+  <style>
+    body{
+      background-image: url('/uploads/hero-1.jpg');
+    }
+    #newA{
+      background-color:firebrick
+    }
+  </style>
   <body>
     <div class="signup-form">
       <form class="" action="/signup" method="post">
@@ -15,8 +23,7 @@
         <input type="password" placeholder="Password" name="password" class="txtb">
         <input type="usertype" placeholder="Usertype" name="usertype" class="txtb">
         <input type="submit" value="Create Account" class="signup-btn">
-        <a href="/login">Already Have one ?</a>
-      </form>
+        <a id="newA" href="/login">Already Have one ?</a>      </form>
     </div>
   </body>
 </html>

@@ -51,8 +51,8 @@ function printingproducts(data) {
         dffdsf = $(`<p class="unique"style='display:none'>${data[i].id}</p>`)
         df = $(`<p id="vendor" style='display:none'>${data[i].vendor}</p>`)
         imgs = $(`<p id="image-add" style='display:none'>${data[i].image}</p>`)
-        addtocart = $(`<button class="addtocart">add to cart</button>`);
-        wishlist = $(`<button class="wishlist">wish list</button>`);
+        addtocart = $(`<button class="addtocart btn btn-success">Add To Cart</button>`);
+        wishlist = $(`<button class="wishlist btn btn-primary" >Wish List</button>`);
         para = $(`<p></p>`);
         para.append(addtocart, wishlist);
         carddiv.append(image, names, price, description, para, dffdsf, df, imgs);

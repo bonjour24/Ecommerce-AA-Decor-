@@ -5,7 +5,6 @@ const db=new sequelize({
     storage:'shop.db',
 })
 
-
 const users=db.define('users',{
     id:{
         type:sequelize.INTEGER,
@@ -135,11 +134,6 @@ const orders=db.define('orders',{
     vendor:{
         type:sequelize.STRING,
     }
-
-    
-
-
-
 })
 
 const wishlist=db.define('wishlist',{
@@ -164,7 +158,6 @@ const wishlist=db.define('wishlist',{
     image:{
         type:sequelize.STRING,
     },
-
 })
 
 db.sync().then(()=>{

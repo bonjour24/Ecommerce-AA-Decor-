@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Admin</title>
         <link rel="shortcut icon" type="image/png" href="/uploads/userhome.png">
-
+    <link rel="stylesheet" href="/new.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -19,47 +19,47 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="/new.css">
 
     <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/user/product.css">
     <script src="/user/product.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 
 </head>
 <style>
         body{
         background-color: #f2f2f2;
     }
+    .container{
+        align-content: center;
+    }
 </style>
 <body>
     <div>
-        <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: #142952;">
-            <a class="navbar-brand" href="/user"><img src="/uploads/userhome.png" style="height:40px"></a>
+   <nav class="navbar navbar-expand-lg navbar-dark " style="background-color:white;">
+            <a class="navbar-brand" href="/user"><img src="/uploads/userhome.png" style="height:60px"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+                <ul class="navbar-nav mr-auto" style="color:white">
                     <li class="nav-item">
-                        <a class="nav-link active" href="/user/products">Products<span class="sr-only">(current)</span></a>
+                        <a id="black" class="nav-link" href="/user/products">Discover Now<span class="sr-only">(current)</span></a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="/user/cart">Cart<span class="sr-only">(current)</span></a>
+                        <a id="black" class="nav-link" href="/user/cart">Cart<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/user/wishlist">Wishlist<span class="sr-only">(current)</span></a>
+                        <a id="black" class="nav-link" href="/user/orders">Your Orders<span class="sr-only">(current)</span></a>
                     </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="/user/orders">My Orders<span class="sr-only">(current)</span></a>
-                    </li>
-
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
-                    <a class="nav-link" href="/logout">logout<span class="sr-only">(current)</span></a>
+                    <a id="black" class="nav-link" href="/logout">logout<span class="sr-only">(current)</span></a>
                 </form>
 
             </div>
@@ -102,69 +102,11 @@
 
             <Div class="col"></Div>
         </div>
-    </div>
+    </div><br>
     <div class="container">
         <div class="row">
-            <div class="col-3" id="myfilter">
-                <div style="margin:10px;width:100%;color:white;">
-                    
-                    <input type="search" name="term" id="searchinput" placeholder="search">
-                    <button class="button bg-light" id="searchbtn">search</button>
-                </div>
-                <div class="category">
-                    <div style=";padding:0 10px; background-color:#384aeb; width:100%; color:white;border-radius:5px">
-                        Category:
-                    </div>
-                    <div style="padding:0 20px;background-color:rgb(241, 241, 241);width:100%;border-radius:5px">
-                        <ul>
-                            <li style="list-style:none ">
-                                <input type="radio" name="type" class="filter" id="cat-1" value="Men">
-                                <label for="cat-1">Men</label>
-                            </li>
-                            <li style="list-style:none">
-                                <input type="radio" name="type" class="filter" id="cat-2" value="Women">
-                                <label for="cat-2">Women</label>
-                            </li>
-                        </ul>
 
-                    </div>
-                </div>
-                <div class="sub-category">
-                    <div style=";padding:0 10px; background-color:#384aeb; width:100%; color:white;border-radius:5px">
-                        Sub-Category:
-                    </div>
-                    <div style="padding:0 20px;background-color:rgb(241, 241, 241);width:100%;border-radius:5px">
-                        <ul>
-                            <li style="list-style:none">
-                                <input type="radio" name="sub-type" class="filter" id="sub-1" value="Top">
-                                <label for="sub-1">Top</label>
-                            </li>
-                            <li style="list-style:none">
-                                <input type="radio" name="sub-type" class="filter" id="sub-2" value="Bottom">
-                                <label for="sub-2">Bottom</label>
-                            </li>
-                        </ul>
-
-                    </div>
-                </div>
-                <div class="category">
-                    <div style=";padding:0 10px; background-color:#384aeb; width:100%; color:white;border-radius:5px;">
-                        Price:
-                    </div>
-                    <div style="padding:0 20px;background-color:rgb(241, 241, 241);width:100%;border-radius:5px;">
-                        <span>0</span>
-                        <input type="range" min="0" max="1000" value="250" class="slider" id="myRange"
-                            style="cursor: pointer">
-                        <span>1000</span>
-                        <p>Value: <span id="demo"></span></p>
-
-                    </div>
-                </div>
-                <button id="apply" class="btn">Apply</button>
-                <button id="reset" class="btn">Reset</button>
-            </div>
-
-            <div class="col-9" id="myproducts">
+            <div class="col-10" id="myproducts">
 
 
             </div>
@@ -175,48 +117,62 @@
 
     </div>
     <br>
-    <div  class="footer" style="background-color: #142952;">
-        <div class="row">
-            <div class="col-6">
-                <div style="padding:10px; margin:20px 40px;color:white ">
-                <h2>FOOTER CONTENT</h2>
-                <p>Here you can use rows and columns to organize your footer content.</p>
-            </div>
-            </div>
+ <div id="conty" class="wrapper"><!-- Footer -->
+<footer class="page-footer font-small cyan darken-3">
 
-            <div class="col-3">
-                <div style="padding:10px; margin:20px 0px;color:white;"> 
-                        <h2>LINKS</h2>
-                        <ul style="list-style: none">
-                            <li>
-                                   link 
-                            </li>
-                            <li>
-                                link
-                            </li>
-                        </ul>
-                </div> 
+  <!-- Footer Elements -->
+  <div id="conty" class="container">
 
-            </div>
+    <!-- Grid row-->
+    <div class="row">
 
-            <div class="col-3">
-                <div style="padding:10px; margin:20px 0px;color:white;"> 
-                        <h2>LINKS</h2>
-                        <ul style="list-style: none">
-                            <li>
-                                   link 
-                            </li>
-                            <li>
-                                link
-                            </li>
-                        </ul>
-                </div> 
+      <!-- Grid column -->
+      <div class="col-md-12 py-5">
+        <div class="mb-5 flex-center">
 
-            </div>
-
-
+          <!-- Facebook -->
+          <a class="fb-ic">
+            <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!-- Twitter -->
+          <a class="tw-ic">
+            <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!-- Google +-->
+          <a class="gplus-ic">
+            <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!--Linkedin -->
+          <a class="li-ic">
+            <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!--Instagram-->
+          <a class="ins-ic">
+            <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!--Pinterest-->
+          <a class="pin-ic">
+            <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
+          </a>
         </div>
+      </div>
+      <!-- Grid column -->
+
     </div>
+    <!-- Grid row-->
+
+  </div>
+  <!-- Footer Elements -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© Developers:
+    <a href="https://www.instagram.com/abhaym24/">Abhay Motwani ,</a>
+    <a href="https://www.instagram.com/anviksha_sharma_/">Anviksha Sharma</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer --></div>
 
 
 </body>
